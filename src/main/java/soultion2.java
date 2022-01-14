@@ -1,4 +1,4 @@
-public class soultion2 {
+public class solution2 {
     public String solution(int num) {
         String answer = "";
         if (num %2 ==0) {
