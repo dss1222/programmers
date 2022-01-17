@@ -5,21 +5,19 @@ public class solution26 {
         int[] arr={1,2,3,4};
         if (arr.length == 1) {
             int[] answer = {-1};
-            return answer;
         }
         int[] answer = new int[arr.length - 1];
         int minIndex = 0;
         for (int i = 0; i < arr.length; i++) {
             if (arr[minIndex] > arr[i]) {
-                minIndex = i;
+                minIndex = i; //최소값의 위치를 구함
             }
         }
         for (int i = minIndex + 1; i < arr.length; i++) {
-            arr[i - 1] = arr[i];
+            arr[i - 1] = arr[i]; //arr
         }
         for (int i = 0; i < answer.length; i++) {
-            answer[i] = arr[i];
+            answer[i] = arr[i]; //
         }
-        return answer;
     }
 }
